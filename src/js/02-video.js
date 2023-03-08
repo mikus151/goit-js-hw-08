@@ -11,7 +11,7 @@ const actualTime = localStorage.getItem(playerTime);
 
 const onPlay = function (timeupdate) {
   
-  localStorage.setItem(currentTime, timeupdate.seconds);
+  localStorage.setItem(playerTime, timeupdate.seconds);
 };
 
 player.on('timeupdate', throttle(onPlay, 1000));
